@@ -55,6 +55,9 @@ export default {
     updateTransportation(state, payload) {
       state.bookingInfo.transportation = payload
     },
+    updateResetPassword(state, payload) {
+      state.resetPassword = payload
+    },
     updateMessage(state, payload) {
       state.bookingInfo.message = payload
     },

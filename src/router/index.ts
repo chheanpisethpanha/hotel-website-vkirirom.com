@@ -17,6 +17,7 @@ import store from '@/store'
 const routes = [
   {
     path: '/',
+    props: true,
     component: Home
   },
   {

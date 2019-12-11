@@ -12,6 +12,7 @@ const defaultUser = {
 export default {
   namespaced: true,
   state: {
+    resetPassword: true,
     email: '',
     password: '',
     token: '',
@@ -24,6 +25,9 @@ export default {
     currentURL: ''
   },
   getters: {
+    resetPassword: state => {
+      return state.resetPassword
+    },
     email: state => {
       return state.email
     },
@@ -67,6 +71,9 @@ export default {
     },
     updateCurrentURL(state, payload) {
       state.currentURL = payload
+    },
+    updateResetPassword(state, payload) {
+      state.resetPassword = payload
     }
   },
   actions: {
@@ -91,6 +98,13 @@ export default {
             context.state.loginError =
               'Username or password is incorrect, please try again.'
           }
+        })
+    },
+    resetPassword(context) {
+      return AuthenticationService.resetPassword(context)
+        .then((result) => {
+          context.state.resetPassword = true
+          context.commit('updateResetPassword', true)
         })
     },
     register(context) {

@@ -12,6 +12,13 @@ export class AuthenticationService {
   /**
    *
    */
+  static resetPassword(resetToken) {
+    return new Promise((resolve, reject) => {
+      var configs = Object.assign({}, { method: 'post' })
+      configs.url = '/api/v0/resetPassword'
+      resolve(true);
+    })
+  }
   static login(params = {}, options = {}) {
     return new Promise((resolve, reject) => {
       const configs = Object.assign({}, options, { method: 'post' })

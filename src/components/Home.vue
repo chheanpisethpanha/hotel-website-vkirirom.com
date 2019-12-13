@@ -45,7 +45,7 @@
         <v-img height="300px" position="center" class="mt-6 pa-1 mb-6" src="https://res.cloudinary.com/die9ji2vn/image/upload/dpr_auto/w_auto/q_auto:low/f_auto/v1562223032/group/group-retreat_s3ksth.jpg">
           <v-row no-gutters class="align-md-center fill-height">
             <v-flex xs12 class="ma-auto">
-              <h2 class="mt-4 mt-md-0" style="color: #FFFFFF; font-family: 'Oswald', sans-serif; font-size: 36px; text-align: center;">
+              <h2 class="mt-4 mt-md-0" style="color: #FFFFFF; font-size: 36px; text-align: center;">
                 Your next corporate retreat.
               </h2>
             </v-flex>
@@ -89,7 +89,7 @@
       <v-img  height="300px" class="pt-4 pl-2" src="https://res.cloudinary.com/die9ji2vn/image/upload/dpr_auto/w_auto/q_auto:low/f_auto/v1562224268/food/Indian_bi8dn7-Original_ueby7h.jpg">
       <v-row no-gutters justify-start class="mt-6 mb-2 ml-6">
         <v-col cols="12" sm="4">
-          <h2 style="color: #FFFFFF; font-family: 'Oswald', sans-serif; font-size: 34px;">
+          <h2 style="color: #FFFFFF; font-size: 34px;">
             “Best lunch stop in Kirirom.”
           </h2>
         </v-col>
@@ -284,12 +284,10 @@ export default {
 }
 .headerh1{
   color: #FFFFFF;
-  font-family: 'Oswald', sans-serif;
   font-size: 45px;
 }
 .headerh1mob{
   color: #FFFFFF;
-  font-family: 'Oswald', sans-serif;
   font-size: 35px;
 }
 .card{
